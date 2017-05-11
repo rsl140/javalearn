@@ -1,6 +1,7 @@
 package pro;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class manage {
 
@@ -14,9 +15,9 @@ public class manage {
 	
 	public static void main(String[] args) {
 		Boolean flag = false;//定义是否继续循环
-		String[] vipName = new String[3];
-		String[] vipAge = new String[3];
-		String[] vipPhone = new String[3];
+		String[] vipName = new String[10];
+		String[] vipAge = new String[10];
+		String[] vipPhone = new String[10];
 		
 		//初始化数据内容
 		vipName[0] = "张三";
@@ -145,7 +146,28 @@ public class manage {
 	}
 	//增加
 	public static void add(String[] vipName,String[] vipAge,String[] vipPhone){
-		
+		System.out.println("输入需要新增的人名");
+		String name = input.next();
+		System.out.println("输入需要新增的年龄");
+		String age = input.next();
+		System.out.println("输入需要新增的电话");
+		String phone = input.next();
+		boolean inputflag = false;
+		for(int i = 0;i<vipName.length;i++){
+			if(vipName[i]==null){
+				vipName[i] = name;
+				vipAge[i] = age;
+				vipPhone[i] = phone;
+				inputflag = true;
+				break;
+			}
+		}
+		if(inputflag){
+			System.out.println("添加成功");
+		}
+		else{
+			System.out.println("达到存储上限");
+		}
 	}
 	//返回列表
 	public static void list(String[] vipName,String[] vipAge,String[] vipPhone){

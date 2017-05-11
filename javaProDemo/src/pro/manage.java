@@ -27,6 +27,10 @@ public class manage {
 		vipAge[1] = "28";
 		vipPhone[1] = "22222222222";
 		
+		vipName[2] = "赵五";
+		vipAge[2] = "18";
+		vipPhone[2] = "33333333333";
+		
 		do{
 			Mnue();
 			int choose = input.nextInt();
@@ -39,8 +43,21 @@ public class manage {
 				change(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;
+			case 3:
+				delect(vipName,vipAge,vipPhone);
+				flag = returns();
+				break;
+			case 4:
+				add(vipName,vipAge,vipPhone);
+				flag = returns();
+				break;
+			case 5:
+				list(vipName,vipAge,vipPhone);
+				flag = returns();
+				break;
 				default:
 					System.exit(0);
+					break;
 			}
 		}while(flag);
 	}
@@ -51,7 +68,8 @@ public class manage {
 		System.out.println("\t2.修改");
 		System.out.println("\t3.删除");
 		System.out.println("\t4.新增");
-		System.out.println("\t5.列表\n");
+		System.out.println("\t5.列表");
+		System.out.println("\t6.任意键退出\n");
 		System.out.println("***********************");
 		System.out.println("请选择：");
 	}
@@ -113,16 +131,30 @@ public class manage {
 	}
 	
 	//删除
-	public static void delect(){
-		
+	public static void delect(String[] vipName,String[] vipAge,String[] vipPhone){
+		System.out.println("输入需要删除的人名");
+		String name = input.next();
+		int index = forEarchArrayReturnIndex(vipName,name);
+		if(index != -1){
+			vipName[index] = null;
+			vipAge[index] = null;
+			vipPhone[index] = null;
+		}else{
+			System.out.println("查无此人！");
+		}
 	}
 	//增加
-	public static void add(){
+	public static void add(String[] vipName,String[] vipAge,String[] vipPhone){
 		
 	}
 	//返回列表
-	public static void list(){
-		
+	public static void list(String[] vipName,String[] vipAge,String[] vipPhone){
+		System.out.print("姓名\t年龄\t电话\n");
+		for(int i = 0;i < vipName.length;i++){
+			if(vipName[i] != null){
+				System.out.print(vipName[i] + "\t" + vipAge[i] + "\t" +  vipPhone[i] + "\n");
+			}
+		}
 	}
 	
 	//根据修改不同的数组更改数组内容
@@ -143,7 +175,7 @@ public class manage {
 	public static int forEarchArrayReturnIndex(String[] array,String vale){
 		int index = -1;
 		for(int i = 0;i<array.length-1;i++){
-			if(array[i].equals(vale)){
+			if(array[i] != null && array[i].equals(vale)){
 				index = i;
 				break;
 			}

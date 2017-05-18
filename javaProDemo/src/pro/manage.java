@@ -34,25 +34,25 @@ public class manage {
 		
 		do{
 			Mnue();
-			int choose = input.nextInt();
+			String choose = input.next();
 			switch(choose){
-			case 1:
+			case "1":
 				selects(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;
-			case 2:
+			case "2":
 				change(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;
-			case 3:
+			case "3":
 				delect(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;
-			case 4:
+			case "4":
 				add(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;
-			case 5:
+			case "5":
 				list(vipName,vipAge,vipPhone);
 				flag = returns();
 				break;

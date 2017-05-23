@@ -190,7 +190,7 @@ public class manage {
 			array[index] = changevale;
 		}else{
 			System.out.println("找不到需要修改的内容");
-		}
+		}   
 	}
 	
 	//根据输入的内容在数组中查找相同的值返回下标

@@ -1,10 +1,10 @@
-package Demo;
+package com.homework.onlyString;
 
 import java.util.Scanner;
 
 public class Register {
 	/**
-	 * @功能 实现登陆
+	 * @功能 上机练习1
 	 * @作者 饶思羚
 	 * @时间 2017.5.23
 	 * @地址 机房

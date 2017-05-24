@@ -1,4 +1,4 @@
-package Demo;
+package com.demo.chapter1_9;
 
 /*
  * @功能：基本数据类型

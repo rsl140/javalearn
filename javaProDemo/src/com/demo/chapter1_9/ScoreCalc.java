@@ -1,4 +1,4 @@
-package Demo;
+package com.demo.chapter1_9;
 
 public class ScoreCalc {
 	int java;//java成绩

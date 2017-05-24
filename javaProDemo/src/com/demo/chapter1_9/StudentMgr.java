@@ -1,4 +1,4 @@
-package Demo;
+package com.demo.chapter1_9;
 /**
  * 学生管理系统
  * */

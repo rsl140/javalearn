@@ -1,4 +1,4 @@
-package Demo;
+package com.demo.chapter1_9;
 
 public class Student {
 	String name;//姓名

@@ -1,4 +1,4 @@
-package Demo;
+package com.demo.chapter1_9;
 /**
  * @功能 检查文件格式
  * @作者 饶思羚

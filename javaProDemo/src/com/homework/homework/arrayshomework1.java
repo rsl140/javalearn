@@ -1,4 +1,4 @@
-package homework;
+package com.homework.homework;
 import java.util.Arrays;
 /*
  * @功能：找出最低积分

@@ -1,4 +1,4 @@
-package homework;
+package com.homework.homework;
 
 public class teacher {
 	/*

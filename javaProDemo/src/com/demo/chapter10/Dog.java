@@ -34,14 +34,5 @@ public class Dog {
 	/**
 	 * 打印狗的信息
 	 * */
-	public void show(){
-		
-	}
-	public void show(int a){
-		
-	}
-	public void show(String a){
-		
-	}
 	
 }

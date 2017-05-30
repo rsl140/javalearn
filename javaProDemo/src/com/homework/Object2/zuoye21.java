@@ -1,4 +1,7 @@
 package com.homework.Object2;
+
+import java.util.Random;
+
 /**
  * @author rsl
  * @功能 基础21
@@ -6,7 +9,6 @@ package com.homework.Object2;
  * */
 public class zuoye21 {
 	public static void main(String[] args) {
-
 		  int a[] = new int[100];
 		  int count[] =new int[7];
 		  System.out.println("生成的随机数");
@@ -20,6 +22,5 @@ public class zuoye21 {
 		  for(int i = 1; i < 7;i++){
 			  System.out.println(i+":"+count[i]);
 		  }
-		 
 	}
 }

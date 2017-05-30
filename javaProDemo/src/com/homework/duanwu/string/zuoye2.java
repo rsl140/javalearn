@@ -1,4 +1,4 @@
-package con.homewor.duanwu.string;
+package com.homework.duanwu.string;
 /**
  * @author rsl
  * @功能 字符串2

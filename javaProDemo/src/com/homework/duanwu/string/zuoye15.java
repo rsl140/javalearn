@@ -1,4 +1,4 @@
-package con.homewor.duanwu.string;
+package com.homework.duanwu.string;
 
 public class zuoye15 {
 	/**

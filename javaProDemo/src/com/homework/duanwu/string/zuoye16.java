@@ -1,4 +1,4 @@
-package con.homewor.duanwu.string;
+package com.homework.duanwu.string;
 
 import java.util.Scanner;
 
@@ -8,6 +8,10 @@ import java.util.Scanner;
  * @时间 2017.5.27
  * */
 public class zuoye16 {
+	/**
+	 * 待定 有bug
+	 * 
+	 * */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("输入一组字符串：");

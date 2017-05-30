@@ -1,4 +1,4 @@
-package con.homewor.duanwu.string;
+package com.homework.duanwu.string;
 
 import java.util.Arrays;
 import java.util.Scanner;

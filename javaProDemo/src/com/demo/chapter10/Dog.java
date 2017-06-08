@@ -3,7 +3,7 @@ package com.demo.chapter10;
  * 构造函数
  * */
 public class Dog {
-	String name;
+	public String name;
 	int age;
 	int love;//与主人亲密度
 	String type;//品种
@@ -23,14 +23,14 @@ public class Dog {
 	public Dog(String name){
 //		this();
 		this.name = name;
-		System.out.println("调用一个构造函数方法");
+		//System.out.println("调用一个构造函数方法");
 	}
 //	
-//	public Dog(String name,int age){
-//		this(name);//调用一个String类型的参数构造函数方法
-//		this.age = age;
-//		System.out.println("调用一个构造函数方法");
-//	}
+	public Dog(String name,int age){
+		this(name);//调用一个String类型的参数构造函数方法
+		this.age = age;
+		//System.out.println("调用一个构造函数方法");
+	}
 	/**
 	 * 打印狗的信息
 	 * */
